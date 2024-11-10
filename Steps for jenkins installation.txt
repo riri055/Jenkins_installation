@@ -1,0 +1,49 @@
+1) Prepare the Environment
+System Requirements: Jenkins requires Java (JDK 8 or 11) and runs on many operating systems (Windows, macOS, Linux).
+Install Java: Ensure Java is installed and set up in your system:
+
+2) Download the Jenkins Windows installer from jenkins.io.
+   Run the installer and follow the installation prompts.
+
+3) Start Jenkins Service
+
+4) Access Jenkins
+Open a browser and go to http://localhost:8080 (replace localhost with the server’s IP if accessing remotely).
+
+5) Setup Jenkins
+Once logged in, Jenkins will prompt you to install plugins.
+Choose Install Suggested Plugins (recommended for basic setup) or select specific plugins based on your requirements.
+Create your first admin user and complete the setup.
+
+6) Configure Basic Settings
+Go to Manage Jenkins > Configure System to set up system-wide configurations, such as:
+Jenkins URL
+Email notifications
+JDK, Git, and other tool paths
+
+7) Install and Configure Plugins
+Go to Manage Jenkins > Manage Plugins and install any necessary plugins for your project. Some commonly used plugins:
+Git Plugin: For integrating with Git repositories.
+Pipeline Plugin: For creating CI/CD pipelines as code.
+Blue Ocean: For a modern UI and pipeline visualization.
+
+8) Create Your First Job
+Go to New Item on the Jenkins dashboard.
+Choose a project type (Freestyle Project or Pipeline).
+Configure the job:
+Set up a source control repository, like GitHub.
+Add build steps, such as shell scripts or Maven commands.
+Add post-build actions, like sending email notifications.
+
+9) Run and Test the Job
+Trigger the job manually or set up automatic triggers like Build Periodically or Poll SCM to pull code at regular intervals.
+Check the Console Output to monitor build logs.
+
+10) Configure Security and User Permissions
+Go to Manage Jenkins > Configure Global Security to set up security:
+Choose an authentication method, like Jenkins’ internal database.
+Configure authorization options to control user permissions.
+
+11) Setting Up Backups (Optional but Recommended)
+Use the ThinBackup plugin or another backup method to regularly back up Jenkins configurations, jobs, and plugins.
+After setup, you can start exploring CI/CD pipelines, automating tests, and deploying applications through Jenkins!
